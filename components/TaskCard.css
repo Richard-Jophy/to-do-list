@@ -1,0 +1,53 @@
+.task-card {
+    width: 100%;
+    min-height: 100px;
+    background-color: rgba(231, 231, 231, 0.3); /* Adding opacity to the background color */
+
+    
+
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    transition: background-color 0.3s ease-in-out; /* Adding transition to background-color */
+}
+
+.task_text {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.task_card_bottom_line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task_delete {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #fff; /* Default background color */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Adding transition for background-color and transform */
+}
+
+.task_delete:hover {
+    background-color: #ccc; /* Background color on hover */
+    /* Slightly enlarge the element on hover */
+}
+
+.delete_icon {
+    width: 20px;
+    opacity: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.task_delete:hover.delete_icon{
+    opacity: 80%;
+}
